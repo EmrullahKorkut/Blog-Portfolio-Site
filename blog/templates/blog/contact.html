@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+    <div class="row"> 
+        <div class="col-3">
+            <a href="{% url "about" %}">
+                <img src="static/img/profile.png" alt="" class="img-thumbnail img-fluid mt-5">
+            </a>
+        </div>
+        <div class="col-6">
+            
+            <h1 class="text-center">Contact me</h1>
+            <hr>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;I’d love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out using the form below or through any of the contact details provided.</p>
+            <div class="col-6">
+                <ul>
+                    <hr>
+                    <li>Email: your-email@example.com</li>
+                    <hr>
+                    <li>Phone: (123) 456-7890</li>
+                    <hr>
+                    <li>Location: 123 Main Street, City, Country</li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="col-6">
+
+            </div>    
+        </div>
+        <div class="col-3">
+            <div class="container ms-5 mt-5">
+                <div class="row">
+                    <div class="col-3 ">
+                        <a href="#" style="color: inherit;text-decoration: none;">
+                            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 ">
+                        <a href="#" style="color: inherit;text-decoration: none;">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 ">
+                        <a href="#" style="color: inherit;text-decoration: none;">
+                            <i class="fa-brands fa-x-twitter fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="col-3 ">
+                        <a href="#" style="color: inherit;text-decoration: none;">
+                            <i class="fa-brands fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "partials/_footer.html" %}
+
+{% endblock content %}

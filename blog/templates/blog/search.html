@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Blogs{% endblock title %}
+
+
+{% block content %}
+
+<div class="container mt-5 ">
+    <div class="row">
+        <div class="col-3">
+            {% include 'partials/_category.html' %}
+        </div>
+
+        <div class="col-6">
+            <h1 class="text-center">Searches by '{{ search }}'</h1>
+            <hr>
+            {% for blog in blogs %}
+                {% include 'blog/partials/_blog.html' %}   
+                <hr>    
+            {% endfor %}
+           
+        </div>
+        <div class="col-3">
+          
+        </div>
+    </div>
+</div>
+
+{% include "partials/_footer.html" %}
+
+{% endblock content %}

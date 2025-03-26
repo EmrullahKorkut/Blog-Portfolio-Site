@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+    <div class="row"> 
+        <div class="col-3">
+            <a href="{% url "about" %}">
+                <img src="static/img/profile.png" alt="" class="img-thumbnail img-fluid mt-5">
+            </a>
+        </div>
+        <div class="col-6">
+            
+            <h1 class="text-center">About me</h1>
+            <hr>
+            <h5>Life</h5>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam velit earum rerum molestias praesentium animi fuga blanditiis iste odio enim? Architecto officiis nulla aliquid autem velit dolores aut atque quae nihil aliquam laborum quis earum beatae iure, at sint modi. Quasi laborum qui nam maiores rerum officia ipsam ipsum tenetur?</p>
+            <h5>Education</h5>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit vitae voluptatem unde voluptates maxime veritatis saepe officia ipsam voluptatum? Explicabo laudantium consequatur libero laborum hic sit similique corporis praesentium expedita.</p>
+            <h5>Business</h5>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos repudiandae, in nostrum fugit architecto laboriosam sequi distinctio eos molestiae, exercitationem voluptatem quod iure alias sed.</p>
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+</div>
+
+{% include "partials/_footer.html" %}
+
+{% endblock content %}

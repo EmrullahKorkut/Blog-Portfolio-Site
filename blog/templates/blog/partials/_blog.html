@@ -1,0 +1,18 @@
+{% load static %}
+
+
+<div class="card" >
+    <a href="{% url 'blog_details' blog.slug %}" style="text-decoration: none; color: black;">
+      <img src="{{ blog.image.url }}" class="card-img-top" alt="Card image cap" style="max-width: 100%;max-height: 400px;display: block;">
+    </a>
+    <div class="card-body">
+      <a href="{% url 'blog_details' blog.slug %}" style="text-decoration: none; color: black;">
+        <h4 class="card-title text-center">{{ blog.title }}</h4>
+      </a>
+      <hr>
+      <p class="card-text-secondary text-center">{{ blog.description|safe|striptags|slice:"300" }}...</p>
+      <div class="card-footer text-center">
+        <p class="card-text"><small>Last updated: {{ blog.publish_date }}</small></p>
+      </div>
+    </div>
+</div>

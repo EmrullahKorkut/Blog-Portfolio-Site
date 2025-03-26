@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}HomePage{% endblock title %}
+
+
+{% block content %}
+
+<div class="container mt-5 ">
+    <div class="row">
+        <div class="col-3">
+            {% include 'partials/_category.html' %}
+        </div>
+
+        <div class="col-6">
+           <h1 class="text-center">Highlights</h1>
+           <hr>
+           {% include "blog/partials/_slider.html" %}
+        </div>
+        <div class="col-3">
+          
+        </div>
+    </div>
+</div>
+
+{% include "partials/_footer.html" %}
+
+{% comment %} homepage e carousel ekle (öne çıkarılanlar veya son blog yazıları için) {% endcomment %}
+
+{% endblock content %}
+
